@@ -1,5 +1,5 @@
 %nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark
-  %a.navbar-brand.mr-auto.mr-lg-0{:href => "#"} Open Vagas
+  %a.navbar-brand.mr-auto.mr-lg-0{href: root_path} Open Vagas
   %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
     %span.navbar-toggler-icon
   #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
@@ -9,7 +9,7 @@
           Inicio
           %span.sr-only (current)
       %li.nav-item.active
-        %a.nav-link{href: root_path}
+        %a.nav-link{href: new_company_path}
           Minha Empresa
           %span.sr-only (current)
       - unless user_signed_in?
